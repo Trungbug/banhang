@@ -1,4 +1,113 @@
+<style>
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 2500px;
+        /* Đặt giới hạn chiều rộng */
+    }
+
+    header {
+        background-color: #f8f9fa;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        max-height: 50px;
+    }
+
+    .search-box {
+        flex-grow: 1;
+        max-width: 500px;
+    }
+
+    .search-box .input-group {
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Tạo hiệu ứng bóng */
+    }
+
+    .search-box input {
+        border-right: none;
+        border: 1px solid #ced4da;
+        border-radius: 0;
+        padding: 10px 15px;
+    }
+
+    .search-box button {
+        background-color: #007bff;
+        border: none;
+        color: #fff;
+        padding: 0 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .search-box button:hover {
+        background-color: #0056b3;
+    }
+
+    .cart-btn {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Bóng cho nút */
+    }
+
+    .cart-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .cart-btn img {
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .cart-btn span {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 30px 0;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+</style>
+<app-navbar></app-navbar>
 <div class="container">
-    <p>home works!</p>
-    <button class="btn btn-primary">Bootstrap Button</button>
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://ik.imagekit.io/BanHang1234/BANHANG/demo.png?updatedAt=1729268912822" alt="Logo">
+        </div>
+
+        <!-- Thanh tìm kiếm -->
+        <div class="search-box mx-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Tìm sản phẩm">
+                <button class="btn" type="button">Tìm kiếm</button>
+            </div>
+        </div>
+
+        <!-- Giỏ hàng -->
+        <div class="cart-btn">
+            <img src="https://ik.imagekit.io/BanHang1234/BANHANG/image.png?updatedAt=1729269208970" alt="Cart">
+            <span>Giỏ hàng</span>
+        </div>
+    </header>
+
+    <!-- Nội dung trang chủ -->
+    <main class="main-content">
+        <p>Nội dung trang chủ ở đây</p>
+    </main>
 </div>
